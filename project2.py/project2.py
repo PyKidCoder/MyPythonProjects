@@ -60,7 +60,7 @@ print("LEVEL 2 ")
 
 num3 = random.randint(1, 100)
 
-#addition or sustraction
+#addition or subtraction
 
 op1 = random.randint(0, 1)
 op2 = random.randint(0, 1)
