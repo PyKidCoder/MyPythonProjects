@@ -7,7 +7,6 @@ print('I have selected a number between 1 and 100. Can you guess?')
 attempts = 0
 
 done = False
-
 while not done:
   guess = int(input('Guess the number\n'))
     
@@ -33,21 +32,20 @@ print('Click enter when ready')
 
 input()
 
-# Simple but correct algorithm
 
 guess = 0
 attempts = 0
 guess_step = 10; 
-prev_answer = 'l'
+prev_answer = '0'
 
 while not done:
-    # guess = round((low + high)/2)
+    
     answer = input('Is it '+ str(guess) + '? (y = Yes, s = smaller than that, l = larger than that) \n')
     attempts = attempts + 1 
 
     if attempts > 1: 
       if answer != prev_answer:
-        # guess_step = round(guess_step/2)
+       
         guess_step = guess_step - 1
       
     prev_answer = answer
