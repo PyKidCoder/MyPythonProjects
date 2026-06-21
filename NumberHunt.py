@@ -1,4 +1,4 @@
-#In this project you have to guess the number between 1 and 100
+#In this assignment you have to guess the number between 1 and 100
 #and this program try to guess your number
 
 import random 
