@@ -1,15 +1,25 @@
+#In this project you have to guess the number between 1 and 100
+#and this program try to guess your number
+
 import random 
+
+
+#n will hold any random value between 1 and 100
 n = random.randint(1, 100)
 
+#You have to guess the number between 1 to 100
 print('I have selected a number between 1 and 100. Can you guess?')
 
-
+#attempt variable will hold the count of your guess
 attempts = 0
 
+#done is boolean variable and will hold true or false
 done = False
+
+#the while loop is the main part of the code, it lets us guess the number as per the hints
 while not done:
+  #guess variable with hold guess number
   guess = int(input('Guess the number\n'))
-    
   attempts = attempts + 1
   
   if guess > n:
@@ -23,19 +33,22 @@ while not done:
     print('You took ', attempts, 'attempts to guess it.')
     done = True
 
-    print()
+print()
 print()
 done = False
 
 print('Now your chance. You select a number between 1 and 100')
 print('Click enter when ready')
 
+#Here python is going to guess the number
 input()
 
 
 guess = 0
 attempts = 0
 guess_step = 10; 
+
+#in this code it turnes the guess step to 10 meaning it will jump on to number in 10,20...
 prev_answer = '0'
 
 while not done:
@@ -68,6 +81,8 @@ print()
 print('I think I can do it smarter ... ')
 print('Let me try binary search ... ')
 
+#Here python is going to try to guess the number in less attempts than the first try 
+#using Binary Search
 done = False
 low = 0
 high = 100
