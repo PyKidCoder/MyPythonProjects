@@ -4,10 +4,13 @@ t = turtle.Turtle()
 screen = turtle.Screen()
 
 screen.bgcolor("skyblue")
-
-
 t.penup()
-t.pencolor("brown")
+t.pencolor("blue")
+
+t.goto(-80, 250)
+t.write("Book Shelf", False, align="left", font=("Arial", 20, "bold"))
+
+
 
 
 t.goto(-350, -100)
