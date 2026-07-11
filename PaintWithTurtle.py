@@ -7,7 +7,7 @@ screen.bgcolor("skyblue")
 
 
 t.penup()
-t.pencolor("light brown")
+t.pencolor("brown")
 
 
 t.goto(-350, -100)
@@ -34,7 +34,7 @@ t.penup()
 t.goto(-100, 200)
 t.pendown()
 t.pensize(8)
-t.color("saddlebrown")
+t.color("#693303")
 
 # we are making the frame of the bookshelf
 t.forward(200)
