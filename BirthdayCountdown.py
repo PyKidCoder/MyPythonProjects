@@ -11,7 +11,17 @@ date_birth = dt.datetime(year, month, day)
 current_time = dt.datetime.now()
 weekday_names = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 weekday_num = date_birth.weekday()
+today = date_birth .today()
 
+
+age = today.year - year
+
+
+if (today.month, today.day) < (month, day):
+    age = age - 1
+
+# 5. Tell the user their age
+print(f"You are currently {age} years old!")
 
 
 
