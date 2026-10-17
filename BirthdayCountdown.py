@@ -20,7 +20,7 @@ age = today.year - year
 if (today.month, today.day) < (month, day):
     age = age - 1
 
-# 5. Tell the user their age
+
 print(f"You are currently {age} years old!")
 
 
